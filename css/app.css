@@ -1,0 +1,97 @@
+body {
+  background: #111111;
+  font-family: "Montserrat", sans-serif;
+}
+
+.conteudo {
+  height: 100vh;
+}
+
+.ver-btn {
+  color: #f5f5f5;
+  background-image: linear-gradient(to left, #743ad5, #d53a9d);
+  border: none;
+}
+.ver-btn:active {
+  background-color: #DF532A;
+}
+
+.texto-peso, .texto-altura {
+  background-color: #2a2a2a;
+  color: #dfdfdf;
+  width: 80px;
+  border: none;
+}
+
+.resultado {
+  font-size: 3em;
+  color: #f5f5f5;
+}
+.resultado img {
+  width: 130px;
+  transition: 250ms all ease-out;
+}
+
+.status {
+  font-size: 2em;
+  font-weight: 900;
+  color: #f5f5f5;
+}
+.status span {
+  color: #d53a9d;
+}
+
+.form-control {
+  background-color: #2a2a2a;
+  border: none;
+  color: #dfdfdf;
+}
+.form-control::placeholder {
+  color: #dfdfdf;
+}
+
+.radio-toolbar label {
+  cursor: pointer;
+  color: #eeeeee;
+  display: flex;
+  background-color: #2a2a2a;
+  border: 2px solid transparent;
+}
+.radio-toolbar label img {
+  width: 15px;
+  height: 15px;
+}
+.radio-toolbar input[type=radio] {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.radio-toolbar input[type=radio]:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.radio-toolbar input[type=radio]:checked + label {
+  color: #fff;
+  border: solid 2px transparent;
+  border-radius: 10px;
+  background: linear-gradient(#2a2a2a, #2a2a2a) padding-box, linear-gradient(to left, #743ad5, #d53a9d) border-box;
+}
+
+@keyframes toggle {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  10% {
+    display: block;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
